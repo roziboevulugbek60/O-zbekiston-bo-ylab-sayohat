@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> O‘zbekiston bo‘ylab sayohat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<header>
+
+<h1> O‘zbekiston bo‘ylab sayohat</h1>
+
+<p>
+O‘zbekiston shaharlari va tarixiy joylarini kashf eting
+</p>
+
+</header>
+
+
+
+
+
+<div id="menu">
+
+
+<input 
+id="playerName"
+placeholder="Ismingizni kiriting"
+>
+
+
+<button id="start">
+
+🚀 Sayohatni boshlash
+
+</button>
+
+
+
+
+<div class="record">
+
+🏆 Eng yaxshi natija:
+<span id="best">0</span>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div id="game" class="hidden">
+
+
+<div class="top">
+
+
+<span>
+📍 Savol:
+<b id="number">1</b>
+</span>
+
+
+<span>
+⭐ Ball:
+<b id="score">0</b>
+</span>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="place-card">
+
+
+<div id="placeIcon">
+
+🕌
+
+</div>
+
+
+
+<h2 id="question">
+
+</h2>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div id="answers"></div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="result" class="hidden">
+
+
+<h2>🎉 Sayohat tugadi</h2>
+
+
+<p>
+
+Sizning natijangiz:
+
+<br>
+
+<b id="finalScore">
+0
+</b>
+
+ball
+
+</p>
+
+
+
+
+<button id="restart">
+
+🔄 Yangi sayohat
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<footer>
+
+Developer: Ulug'bek.R
+
+</footer>
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="places.js"></script>
+
+<script src="questions.js"></script>
+
+<script src="storage.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

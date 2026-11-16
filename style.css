@@ -1,0 +1,501 @@
+/* ======================================
+   🇺🇿 O'ZBEKISTON BO'YLAB SAYOHAT
+   STYLE DESIGN
+   Developer: Ulug'bek.R
+====================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", sans-serif;
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:15px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #0ea5e9,
+        #16a34a
+    );
+
+    color:#1e293b;
+
+}
+
+
+
+
+
+
+.app{
+
+    width:100%;
+
+    max-width:500px;
+
+    min-height:650px;
+
+    background:#f8fafc;
+
+    border-radius:30px;
+
+    padding:25px;
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.25);
+
+}
+
+
+
+
+
+
+
+header{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+
+
+header h1{
+
+    color:#047857;
+
+    font-size:30px;
+
+}
+
+
+
+header p{
+
+    margin-top:10px;
+
+    color:#64748b;
+
+    line-height:1.5;
+
+}
+
+
+
+
+
+
+
+
+.hidden{
+
+    display:none!important;
+
+}
+
+
+
+
+
+
+
+
+/* MENU */
+
+
+input{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:18px;
+
+    background:#e2e8f0;
+
+    font-size:17px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #16a34a,
+        #0ea5e9
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.04);
+
+}
+
+
+
+
+
+
+
+.record{
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:white;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+/* GAME */
+
+
+.top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    background:#dcfce7;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+.place-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.1);
+
+}
+
+
+
+
+
+
+#placeIcon{
+
+    width:110px;
+
+    height:110px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #facc15,
+        #fb923c
+    );
+
+    font-size:60px;
+
+    animation:
+
+    travel 2s infinite;
+
+}
+
+
+
+
+
+
+
+@keyframes travel{
+
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+
+
+#question{
+
+    margin-top:20px;
+
+    font-size:21px;
+
+    color:#334155;
+
+    line-height:1.4;
+
+}
+
+
+
+
+
+
+
+
+/* JAVOBLAR */
+
+
+#answers{
+
+    display:grid;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+
+.answer{
+
+    background:white;
+
+    color:#1e293b;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+.answer:hover{
+
+    background:#dcfce7;
+
+}
+
+
+
+.correct{
+
+    background:#22c55e!important;
+
+    color:white!important;
+
+}
+
+
+
+.wrong{
+
+    background:#ef4444!important;
+
+    color:white!important;
+
+}
+
+
+
+
+
+
+
+
+/* NATIJA */
+
+
+#result{
+
+    text-align:center;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+}
+
+
+
+#finalScore{
+
+    font-size:35px;
+
+    color:#16a34a;
+
+}
+
+
+
+
+
+
+
+footer{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#64748b;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+@media(max-width:450px){
+
+
+    .app{
+
+        padding:18px;
+
+    }
+
+
+
+    header h1{
+
+        font-size:25px;
+
+    }
+
+
+
+    #placeIcon{
+
+        width:85px;
+
+        height:85px;
+
+        font-size:45px;
+
+    }
+
+
+
+    #question{
+
+        font-size:18px;
+
+    }
+
+
+}
